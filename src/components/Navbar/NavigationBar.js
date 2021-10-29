@@ -4,11 +4,12 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavigationBar.css'
-import useFirebase from '../../hooks/useFirebase';
+
+import useAuth from '../../hooks/useAuth';
 
 
 const NavigationBar = () => {
-    const {user,logOut} = useFirebase();
+    const {user,logOut} = useAuth();
    
   return (
 
@@ -24,7 +25,8 @@ const NavigationBar = () => {
                     <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
                     
                     
-                    <Nav.Link as={HashLink} to="/about">About Us</Nav.Link>
+                    <Nav.Link as={HashLink} to="/addService">Add a Service</Nav.Link>
+                    <Nav.Link as={HashLink} to="/about">About</Nav.Link>
                     
                    
                   {
