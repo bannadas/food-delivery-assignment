@@ -27,7 +27,8 @@ const NavigationBar = () => {
                     
                     <Nav.Link as={HashLink} to="/addService">Add a Service</Nav.Link>
                     <Nav.Link as={HashLink} to="/about">About</Nav.Link>
-                    
+                    <Nav.Link as={HashLink} to="/myorders">MY ORDERS</Nav.Link>
+                   
                    
                   {
                       user.email?
@@ -35,6 +36,8 @@ const NavigationBar = () => {
                       :
                       <Nav.Link as={HashLink} to="/login">Log in</Nav.Link>
                   }
+                      {user.email && <span style={{ color: 'black'}}>Logged in as  {user.displayName}         </span>}
+
 
 
                      

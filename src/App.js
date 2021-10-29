@@ -6,8 +6,10 @@ import {
 } from "react-router-dom";
 import './App.css';
 import About from "./components/About/About";
-import addService from "./components/addService/addService";
+
+
 import Home from './components/Home/Home';
+import MyOders from "./components/MyOrders/MyOders";
 import SignIn from "./components/SignIn/SignIn";
 import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./privateRoute/PrivateRoute";
@@ -24,9 +26,7 @@ function App() {
           <Route exact path="/home">
             <Home></Home>
           </Route>
-          <PrivateRoute path="/addService">
-            <addService></addService>
-          </PrivateRoute>
+         
 
           <Route path="/login">
           <SignIn></SignIn>
@@ -34,6 +34,11 @@ function App() {
           <PrivateRoute path="/about">
             <About></About>
           </PrivateRoute>
+          
+          <PrivateRoute path="/myorders">
+        <MyOders></MyOders>
+          </PrivateRoute>
+
         </Switch>
       </Router>
       </AuthProvider>
