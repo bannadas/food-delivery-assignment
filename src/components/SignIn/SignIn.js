@@ -1,10 +1,11 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import NavigationBar from '../NavigationBar/NavigationBar';
 
 const SignIn = () => {
-    const {signInUsingGoogle} = useFirebase();
+    const {signInUsingGoogle} = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';

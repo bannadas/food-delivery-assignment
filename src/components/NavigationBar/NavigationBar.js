@@ -5,12 +5,13 @@ import { HashLink } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavigationBar.css'
 import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 
 
 
 
 const NavigationBar = () => {
-    const {user,signInUsingGoogle,logOut} = useFirebase();
+    const {user,signInUsingGoogle,logOut} = useAuth();
    
   return (
 
