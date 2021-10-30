@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import FoodItem from '../FoodItem/FoodItem';
 import './FoodItems.css'
 
 const FoodItems = () => {
+    const {user} = useAuth();
     const [items,setItems] = useState([]);
     const [isDeleted,setIsdeleted] = useState(null);
     useEffect(()=>{
@@ -29,12 +31,28 @@ const FoodItems = () => {
         });
             console.log(id);
     }
+
+
+    const handleAddToCart = (index) =>{
+        const data = items[index];
+        data.email = user?.email;
+        console.log(data);
+        fetch('http://localhost:5000/addOrder',{
+            method:'POST',
+            headers:{'content-type':'application/json'},
+            body:JSON.stringify(data),
+        })
+
+
+        // console.log(index);
+        // console.log(items[index]);
+    }
     return (
         <div id="food-items">
             <h2 className="text-primary mt-5">All items</h2>
             <div className=" container food-container">
                {
-                items.map(item => <div className=" card pb-3">
+                items.map((item,index) => <div className=" card pb-3" key={item._id}>
                 <img src={item.image} alt="" />
                 <h3>{item.name}</h3>
                
@@ -44,8 +62,10 @@ const FoodItems = () => {
 
                 <button onClick={()=>handleDelete(item._id)} className="btn btn-danger">Delete</button>
 
-
-                    <button className="btn btn-warning">order {item.name.toLowerCase()}</button>
+                   
+                       
+                   
+                    <button onClick={()=>handleAddToCart(index)} className="btn btn-warning">Buy now</button>
                
             </div>)
                 }

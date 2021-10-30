@@ -14,6 +14,8 @@ import SignIn from './components/SignIn/SignIn';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+import Error from './components/Error/Error';
+
 
 
 function App() {
@@ -36,6 +38,12 @@ function App() {
         </Route>
         <Route path="/item/:id">
           <PlaceOrder></PlaceOrder>
+        </Route>
+        <Route >
+        
+        </Route>
+        <Route path='*'>
+        <Error></Error>
         </Route>
        </Switch>
      </Router>
