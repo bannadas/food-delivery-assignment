@@ -30,6 +30,7 @@ const NavigationBar = () => {
                     <Nav.Link as={HashLink} to="/addService">Add a Service</Nav.Link>
                     <Nav.Link as={HashLink} to="/additem">Add Item</Nav.Link>
                     <Nav.Link as={HashLink} to="/myorders">MY ORDERS</Nav.Link>
+                    <Nav.Link as={HashLink} to="/dashboard">DashBoard</Nav.Link>
                    
                     {
                       user.email?

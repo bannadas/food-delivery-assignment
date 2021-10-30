@@ -15,6 +15,7 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Error from './components/Error/Error';
+import Dashboard from './components/Dashboard/Dashboard';
 
 
 
@@ -39,8 +40,8 @@ function App() {
         <Route path="/item/:id">
           <PlaceOrder></PlaceOrder>
         </Route>
-        <Route >
-        
+        <Route path="/dashboard" >
+        <Dashboard></Dashboard>
         </Route>
         <Route path='*'>
         <Error></Error>
