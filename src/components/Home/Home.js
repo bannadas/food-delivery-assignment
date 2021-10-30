@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import FoodItems from './FoodItems/FoodItems';
 
 import './Home.css'
 
@@ -7,7 +8,8 @@ const Home = () => {
     return (
         <div>
            <NavigationBar></NavigationBar>
-            <h1>this is home</h1>
+            
+            <FoodItems></FoodItems>
         </div>
     );
 };

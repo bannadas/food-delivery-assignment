@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Rice",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1596560548464-f010549b84d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"paratha",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1598373182133-52452f7691ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJyZWFkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"fish curry",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1626508035297-0cd27c397d67?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmlzaCUyMGN1cnJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"jhal fry",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpY2tlbiUyMGN1cnJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"sabji",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1612700722193-f0410adb8949?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmVnZXRhYmxlJTIwY3Vycnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"dal",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1613478881925-3543125016fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnZXRhYmxlJTIwY3Vycnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"egg omlet",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1518310532637-f5225f94f3c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGVnZyUyMG9tbGV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name":"misty doi",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, voluptates.",
+        "image":"https://images.unsplash.com/photo-1586152319516-d85a5c272a33?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3VyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    }
+]

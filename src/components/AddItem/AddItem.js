@@ -4,14 +4,18 @@ import { useForm } from 'react-hook-form';
 import NavigationBar from '../NavigationBar/NavigationBar';
 
 const AddItem = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit,reset } = useForm();
 
   const onSubmit = data => {
   
     console.log(data);
     axios.post('http://localhost:5000/items',data)
    .then(res => {
-     console.log(res);
+     if(res.data.insertedId){
+       alert('added successfully');
+       reset();
+       
+     }
    })
     
   }
@@ -51,8 +55,7 @@ const AddItem = () => {
               <br />
 
 
-              {errors.exampleRequired && <span>This field is required</span>}
-
+              
               <input type="submit" value="Add" className="btn btn-info w-50" />
             </form>
           </div>
