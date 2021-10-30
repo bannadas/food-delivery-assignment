@@ -18,7 +18,23 @@ const Dashboard = () => {
     return (
         <div>
             <NavigationBar></NavigationBar>
-            <h1>Dashboard {orders.length}</h1>
+            <h1>My orders {orders.length}</h1>
+            <div>
+                <div>
+                    {orders?.map((order,index) =>(
+                        <div className="col-md-6 col-lg-4">
+                            <div className="borderborder p-2 m-2">
+                            <h4>{order.image}</h4>
+                            <h4>{order.name}</h4>
+                            
+                            <h4>{order.description}</h4>
+                            </div>
+
+                        </div>
+                    ))}
+                    
+                </div>
+            </div>
         </div>
     );
 };
