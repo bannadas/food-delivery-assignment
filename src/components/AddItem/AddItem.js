@@ -9,7 +9,7 @@ const AddItem = () => {
   const onSubmit = data => {
   
     console.log(data);
-    axios.post('http://localhost:5000/items',data)
+    axios.post('http://localhost:5000/additems',data)
    .then(res => {
      if(res.data.insertedId){
        alert('added successfully');

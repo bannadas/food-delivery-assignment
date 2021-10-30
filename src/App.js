@@ -13,6 +13,7 @@ import AddItem from './components/AddItem/AddItem';
 import SignIn from './components/SignIn/SignIn';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
          </PrivateRoute>
         <Route path="/login">
           <SignIn></SignIn>
+        </Route>
+        <Route path="/item/:id">
+          <PlaceOrder></PlaceOrder>
         </Route>
        </Switch>
      </Router>

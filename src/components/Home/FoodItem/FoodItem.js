@@ -1,18 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FoodItem.css'
 
 const FoodItem = ({item}) => {
-    const {name,description,image} = item;
+    const {_id,name,description,image} = item;
     return (
-        <div className="service pb-3">
+       
+            <div className=" card pb-3">
             <img src={image} alt="" />
             <h3>{name}</h3>
            
             <p className="px-3">{description}</p>
-            {/* <Link to={`/booking/${id}`}>
-                <button className="btn btn-warning">Book {name.toLowerCase()}</button>
-            </Link> */}
+            <Link to={`/item/${_id}`}>
+                <button className="btn btn-warning">order {name.toLowerCase()}</button>
+            </Link>
         </div>
+       
     );
 };
 

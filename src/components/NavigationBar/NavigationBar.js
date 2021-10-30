@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavigationBar.css'
-import useFirebase from '../../hooks/useFirebase';
+
 import useAuth from '../../hooks/useAuth';
 
 

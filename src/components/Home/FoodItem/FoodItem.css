@@ -1,7 +1,21 @@
-.service{
-    background-color: rgb(226, 241, 241);
+.card{
+    background-color: rgb(222, 233, 233);
     border-radius:20px ;
+    height: 600px;
+    padding: 10px;
 }
-.service img{
+.card h3{
+    color: tomato;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card img{
     width: 100%;
+    height: 300px;
+    border-radius: 10px;
 }
+.card:hover img{
+    overflow: hidden;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+

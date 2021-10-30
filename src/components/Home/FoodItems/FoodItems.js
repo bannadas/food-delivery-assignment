@@ -10,9 +10,9 @@ const FoodItems = () => {
         .then(data => setItems(data))
     },[])
     return (
-        <div id="services">
-            <h2 className="text-primary mt-5">Our services</h2>
-            <div className="service-container">
+        <div id="food-items">
+            <h2 className="text-primary mt-5">All items</h2>
+            <div className=" container food-container">
                {
                 items.map(item => <FoodItem key={item.id} item={item}></FoodItem>)
                 }
