@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 
 
@@ -7,8 +8,9 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 
 
 const MyOrders = () => {
-  
-    const email = 'banna.das2020@gmail.com';
+  const {user} = useAuth();
+  console.log(user.email);
+    const email = user.email;
     const [orders,setOrders] = useState([]);
     useEffect(()=>{
         fetch(`http://localhost:5000/myOrders/${email}`)
