@@ -16,6 +16,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Error from './components/Error/Error';
 import Dashboard from './components/Dashboard/Dashboard';
+import MyOrders from './components/MyOrders/MyOrders';
 
 
 
@@ -40,8 +41,8 @@ function App() {
         <Route path="/item/:id">
           <PlaceOrder></PlaceOrder>
         </Route>
-        <Route path="/dashboard" >
-        <Dashboard></Dashboard>
+        <Route path="/myorders" >
+        <MyOrders></MyOrders>
         </Route>
         <Route path='*'>
         <Error></Error>
