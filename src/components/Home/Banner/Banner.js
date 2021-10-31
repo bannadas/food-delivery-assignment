@@ -1,27 +1,34 @@
 import React from 'react';
+import { FiPhoneCall } from "react-icons/fi";
 
 import './Banner.css'
 
 
+
 const Banner = () => {
     return (
-        <div>
-            
-            <div className="header ">
-           
-            <div className="banner  collapseOnSelect ">
-            <div className="banner-text">
-            <h1><span>AaHAR</span> <br/> Food delivery and service</h1>
-            <p>Our mission is the foundation of all of our decisions.<br/> It guides what we do. It must be known, owned and energized by all.We will distinguish ourselves by our commitment to our values, <br/>promoting an environment.</p>
-            <button className="get-appoinment-btn">Contact Us</button>
-            </div>
-             
-            <img className="banner-image" src="https://o.remove.bg/downloads/16f5b441-15b3-424f-bdd1-3d0ee7e7d610/food-delivery-boy-driving-scooter-with-box-with-food-wearing-mask-removebg-preview.png" alt="" /> 
-            
-            </div>
-            </div>
-            
+        <div className="header-container ">
+      <div className="">
+        <div className="header">
+
+          
+         
+            <h1 className="title pt-5">
+             <span className="Aahar">Aahar</span> <br /> Food Delivery
+            </h1>
+            <h3 className="text-white text-center mt-3">
+            Order food whenever you want!We are always ready to searve you.
+            </h3>
+            <form className="search-form">
+                <input type="text" placeholder=" Restaurant Name" />
+                <input type="text" placeholder="Food Name" />
+                <button className="search-btn">search</button>
+            </form>
+            <h1 className="  text-white text-center mt-3"> <FiPhoneCall></FiPhoneCall>  <span className="number">90-500-28-999</span></h1>
+          </div>
+         
         </div>
+      </div>
     );
 };
 

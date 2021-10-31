@@ -1,0 +1,28 @@
+.nav-title{
+    color: rgb(212, 47, 47);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+
+.log-out-btn{
+    background-color: rgb(212, 47, 47);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    color: white; 
+}
+.google-sign-in-btn{
+    border: 1px solid gray;
+    padding: 5px 10px;
+    
+}
+.user-icon{
+    font-size: 80px;
+    text-align: center;
+}
+.google-icon{
+    font-size: 20px;
+}

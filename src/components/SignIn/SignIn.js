@@ -1,6 +1,9 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
+import './SignIn.css'
+import {FcGoogle} from 'react-icons/fc';
+import {FaUserAlt} from 'react-icons/fa';
 
 import NavigationBar from '../NavigationBar/NavigationBar';
 
@@ -18,8 +21,14 @@ const SignIn = () => {
     return (
         <div>
             <NavigationBar></NavigationBar>
-            <h1>please Sign In</h1>
-            <button  onClick={handleGoogleLogin} className="google-sign-in-btn">  Google Sign In</button>
+            <h1 className="text-primary text-center">please Sign In</h1>
+            <div className="user-icon">
+                <FaUserAlt/>
+                </div>
+           <div className="google-sign-in">
+           <button   onClick={handleGoogleLogin} className="google-sign-in-btn text-center"> 
+          <span className="google-icon"> <FcGoogle/></span>  Google Sign In</button>
+           </div>
         </div>
     );
 };
