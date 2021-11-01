@@ -25,19 +25,17 @@ const Footer = () =>{
               </div>
             </div>
             <div className="col-md-4">
+           
               <div className="footer-menu-container">
-                  <h2>Contact Us</h2>
-                <div className="contact-us-form">
-                <input type="text" placeholder="your email" />
-               
-               <br />
-               <input type="text" placeholder="your text" />
-               <br />
-               <button className="submit-btn">Submit</button>
-                </div>
-               
-
-              </div>
+                <ul>
+                  <li className="footer-menu">Home</li>
+                  <li className="footer-menu">About Us</li>
+                  
+                  <li className="footer-menu">Contact Us</li>
+                  <li className="footer-menu"> Log in</li>
+                </ul>
+             
+            </div>
             </div>
             <div className="col-md-3">
               <h4>Opening Time</h4>

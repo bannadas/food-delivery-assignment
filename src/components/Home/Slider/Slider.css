@@ -1,0 +1,32 @@
+.slider-img{
+    padding: 50px;
+    height: 600px;
+    opacity: 0.7;
+}
+.slider-text{
+    color: black;
+}
+.slider-text h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.slider-text p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.voucher-btn{
+    background-color: rgb(212, 47, 47);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    color: white;
+}
+.order-btn{
+    background-color: rgb(212, 47, 47);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 15px;
+    color: white;
+}

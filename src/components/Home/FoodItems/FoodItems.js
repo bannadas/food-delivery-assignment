@@ -6,30 +6,15 @@ import './FoodItems.css'
 const FoodItems = () => {
     const {user} = useAuth();
     const [items,setItems] = useState([]);
-    const [isDeleted,setIsdeleted] = useState(null);
+   
     useEffect(()=>{
         fetch('http://localhost:5000/items')
         .then(res => res.json())
         .then(data => setItems(data))
-    },[isDeleted])
+    },[])
 
 
-    const handleDelete = (id) =>{
-        fetch(`http://localhost:5000/deleteItem/${id}`,{
-            method:"DELETE",
-            headers:{'content-type':'application/json'},
-        })
-        .then(res => res.json())
-        .then(result => {
-            if(result.deleteCount){
-                setIsdeleted(true);
-            }
-            else{
-                setIsdeleted(false);
-            }
-        });
-            console.log(id);
-    }
+    
 
 
     const handleAddToCart = (index) =>{
@@ -48,7 +33,7 @@ const FoodItems = () => {
     }
     return (
         <div id="food-items">
-            <h2 className="text-primary mt-5">All items</h2>
+            <h2 className="text-center bold text-danger my-5">All items</h2>
             <div className=" container food-container">
                {
                 items.map((item,index) => <div className=" card pb-3" key={item._id}>
@@ -59,12 +44,12 @@ const FoodItems = () => {
 
 
 
-                <button onClick={()=>handleDelete(item._id)} className="btn btn-danger">Delete</button>
+                
 
                    
                        
                    
-                    <button onClick={()=>handleAddToCart(index)} className="btn btn-warning">Buy now</button>
+                    <button onClick={()=>handleAddToCart(index)} className="Add-to-cart-btn">Add To Cart</button>
                
             </div>)
                 }
