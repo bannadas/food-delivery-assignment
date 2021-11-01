@@ -5,6 +5,8 @@ import { HashLink } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavigationBar.css'
 import { FaUserAlt } from 'react-icons/fa';
+import { GiFoodTruck
+} from 'react-icons/gi';
 import useAuth from '../../hooks/useAuth';
 
 
@@ -20,7 +22,7 @@ const NavigationBar = () => {
         <>
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg" >
                 <Container>
-                    <Navbar.Brand ><span className="nav-title">  Aahar</span> </Navbar.Brand>
+                    <Navbar.Brand > <span className="nav-title"> <GiFoodTruck/> Aahar</span> </Navbar.Brand>
 
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">

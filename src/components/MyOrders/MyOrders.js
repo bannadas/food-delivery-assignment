@@ -9,28 +9,28 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 
 const MyOrders = () => {
   const {user} = useAuth();
-  console.log(user.email);
-    const email = user.email;
-    const [orders,setOrders] = useState([]);
+ 
+    const userEmail = user?.user?.email;
+    const [myOrders,setMyOrders] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/myOrders/${email}`)
+        fetch(`http://localhost:3000/myorders/${userEmail}`)
         .then(res => res.json())
-        .then(data => setOrders(data))
-    },[])
-    console.log(orders);
+        .then(data => setMyOrders(data))
+    },[userEmail])
+    
     return (
         <div>
             <NavigationBar></NavigationBar>
-            <h1>My orders {orders.length}</h1>
+            <h1>My orders {MyOrders.length}</h1>
             <div>
                 <div>
-                    {orders?.map((order,index) =>(
+                    {myOrders.map(myOrder =>(
                         <div className="col-md-6 col-lg-4">
                             <div className="borderborder p-2 m-2">
-                            <img src={order.image} alt="" />
-                            <h4>{order.name}</h4>
+                            <img src={myOrder.image} alt="" />
+                            <h4>{myOrder.name}</h4>
                             
-                            <h4>{order.description}</h4>
+                            <h4>{myOrder.description}</h4>
                             </div>
 
                         </div>
