@@ -33,22 +33,30 @@ function App() {
               <Home></Home>
             </Route>
             <Route path="/home">
+              <NavigationBar></NavigationBar>
               <Home></Home>
+              <Footer></Footer>
             </Route>
             <PrivateRoute path="/additem">
+            <NavigationBar></NavigationBar>
               <AddItem></AddItem>
+              <Footer></Footer>
             </PrivateRoute>
             <Route path="/login">
+            <NavigationBar></NavigationBar>
               <SignIn></SignIn>
+              <Footer></Footer>
             </Route>
             <PrivateRoute path="/foodDtl/:_id">
-            
+            <NavigationBar></NavigationBar>
               <PlaceOrder></PlaceOrder>
+              <Footer></Footer>
             </PrivateRoute>
-            <Route path="/myorders" >
-           
+            <PrivateRoute path="/myorders" >
+            <NavigationBar></NavigationBar>
               <MyOrders></MyOrders>
-            </Route>
+              <Footer></Footer>
+            </PrivateRoute>
             <PrivateRoute path="/allorders" >
               <NavigationBar></NavigationBar>
               <AllOrders></AllOrders>

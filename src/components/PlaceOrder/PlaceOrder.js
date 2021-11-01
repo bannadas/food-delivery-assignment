@@ -44,7 +44,7 @@ const PlaceOrder = () => {
 
     return (
         <div>
-            <NavigationBar></NavigationBar>
+          
             <div className="container">
                 <div className="row my-5">
                     <div className=" single-Item col-lg-6 col-12">
@@ -68,7 +68,7 @@ const PlaceOrder = () => {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
+           
         </div>
     );
 };

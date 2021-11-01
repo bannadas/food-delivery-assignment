@@ -23,9 +23,9 @@ const AddItem = () => {
      
       
     return (
-        <div>
+        <div className="container my-4 p-3">
 
-            <NavigationBar></NavigationBar>
+            
       <h1 className="mt-5 text-center text-danger">Add An Item</h1>
       <div className="login-box w-25 m-auto mt-5">
         <div className=" border border d-flex justify-content-center align-items-center">

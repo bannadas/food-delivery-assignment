@@ -19,8 +19,8 @@ const SignIn = () => {
             })
     }
     return (
-        <div>
-            <NavigationBar></NavigationBar>
+        <div className="container my-5">
+           
             <h1 className="text-primary text-center">please Sign In</h1>
             <div className="user-icon">
                 <FaUserAlt/>

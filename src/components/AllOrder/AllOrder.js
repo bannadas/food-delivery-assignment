@@ -2,7 +2,7 @@ import React from 'react';
 
 import './AllOrder.css'
 import {ImCross} from 'react-icons/im';
-import MyOrders from '../MyOrders/MyOrders';
+
 const AllOrder = (props) => {
     const {singleItem, userName, userEmail } = props.allOrder;
     // const handleDelete = () =>{

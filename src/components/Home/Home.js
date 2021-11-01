@@ -10,7 +10,7 @@ import Slider from './Slider/Slider';
 const Home = () => {
     return (
         <div>
-           <NavigationBar></NavigationBar>
+           
             <Banner></Banner>
             <Slider></Slider>
             <FoodItems></FoodItems>
@@ -52,7 +52,7 @@ const Home = () => {
       
       
 
-            <Footer></Footer>
+           
         </div>
     );
 };
