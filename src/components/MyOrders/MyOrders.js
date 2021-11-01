@@ -13,14 +13,14 @@ const MyOrders = () => {
     const userEmail = user?.user?.email;
     const [myOrders,setMyOrders] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:3000/myorders/${userEmail}`)
+        fetch(`https://intense-brushlands-43738.herokuapp.com//myorders/${userEmail}`)
         .then(res => res.json())
         .then(data => setMyOrders(data))
     },[userEmail])
     
     return (
         <div>
-            <NavigationBar></NavigationBar>
+           
             <h1>My orders {MyOrders.length}</h1>
             <div>
                 <div>

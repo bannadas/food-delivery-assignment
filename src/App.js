@@ -29,8 +29,11 @@ function App() {
       <AuthProvider>
         <Router>
           <Switch>
+           
             <Route exact path="/">
+            <NavigationBar></NavigationBar>
               <Home></Home>
+              <Footer></Footer>
             </Route>
             <Route path="/home">
               <NavigationBar></NavigationBar>

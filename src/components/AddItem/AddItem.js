@@ -9,7 +9,7 @@ const AddItem = () => {
   const onSubmit = data => {
   
     console.log(data);
-    axios.post('http://localhost:5000/items',data)
+    axios.post('https://intense-brushlands-43738.herokuapp.com/items',data)
    .then(res => {
      if(res.data.insertedId){
        alert('added successfully');

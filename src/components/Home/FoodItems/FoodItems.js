@@ -7,7 +7,7 @@ const FoodItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/items')
+        fetch('https://intense-brushlands-43738.herokuapp.com//items')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

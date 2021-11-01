@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
-import Footer from '../Footer/Footer';
-import NavigationBar from '../NavigationBar/NavigationBar';
+
 import './PlaceOrder.css'
 
 const PlaceOrder = () => {
@@ -18,7 +17,7 @@ const PlaceOrder = () => {
     const onSubmit = data => {
         data.singleItem = placeItem;
         console.log(data);
-        fetch('http://localhost:5000/orders', {
+        fetch('https://intense-brushlands-43738.herokuapp.com/orders', {
             method: 'POST',
             headers: { 'content-Type': 'application/json' },
             body: JSON.stringify(data)
@@ -32,7 +31,7 @@ const PlaceOrder = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/items')
+        fetch('https://intense-brushlands-43738.herokuapp.com/items')
             .then(res => res.json())
             .then(data => setOrderItems(data))
     }, [])
