@@ -19,7 +19,9 @@ const Home = () => {
 
       
            
-    <div className=" chose-us container my-5 text-center">
+   
+        
+        <div className=" my-4 chose-us container  text-center">
          <h1 className="">Why Chose Us</h1> 
          <hr />   
          <div>
@@ -27,9 +29,12 @@ const Home = () => {
          <p><span className="mx-4">1.Ontime Delivery </span>
         <span className="mx-5">2. Free Delivery Cost </span><span className="mx-5">3. Best Quality Food</span></p>
         <button className="about-us-btn">About Us</button>
-         </div>
+         
+        
+    
 
-         <div className="my-4">
+        
+        <div className="my-4">
                   <h2>Contact Us</h2>
                 <div className="contact-us-form">
                 <input type="text" placeholder="your email" />
@@ -39,7 +44,10 @@ const Home = () => {
                <br />
                <button className="submit-btn">Submit</button>
                 </div>
-                </div>
+        </div>
+        
+         
+    </div>
     </div>
       
       

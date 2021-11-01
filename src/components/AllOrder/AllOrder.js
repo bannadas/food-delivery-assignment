@@ -1,20 +1,30 @@
 import React from 'react';
-import useAuth from '../../hooks/useAuth';
-import './AllOrder.css'
 
+import './AllOrder.css'
+import {ImCross} from 'react-icons/im';
 const AllOrder = (props) => {
-    const { address, singleItem } = props.allOrder;
-    const user = useAuth();
-    console.log(user)
+    const {singleItem, userName, userEmail } = props.allOrder;
+    
+    
 
     return (
-        <div>
-            <div className="card">
-                <div className="card-body">
+        <div className="container">
+            <div className=" container order-card">
+                <div className="order-card-body">
+                    <div className="img">
+                        <img src={singleItem.image} alt="" /></div>
+                    <div>
                     <h1>{singleItem.name}</h1>
-                    <p>{address}</p>
-                    <p>{user.user.displayName}</p>
-                    <p>{user.user.email}</p>
+                    <h3> Price:{singleItem.price}Tk</h3>
+                    <p>{singleItem.description}</p>
+
+                   
+                    <p>User Name:{userName}</p>
+                    <p> User email:{userEmail}</p>
+                    </div>
+                    <div>
+                        <button className="delete-btn">Delete Order <ImCross/></button>
+                    </div>
                 </div>
             </div>
         </div>

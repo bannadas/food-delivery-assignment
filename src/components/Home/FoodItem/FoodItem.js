@@ -14,7 +14,7 @@ const FoodItem = ({ foodItem }) => {
             <p className="px-3">{description}</p>
             <Link to={`/foodDtl/${_id}`}>
 
-                <button className="btn btn-warning">order {name.toLowerCase()}</button>
+                <button className="order-btn">order {name.toLowerCase()}</button>
             </Link>
         </div>
 

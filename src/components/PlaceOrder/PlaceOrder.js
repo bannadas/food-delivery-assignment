@@ -55,9 +55,9 @@ const PlaceOrder = () => {
                     </div>
                     <div className="col-lg-6 col-12">
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input defaultValue={user.displayName} {...register("name")} placeholder="Your name"  className="p-2 m-2"
+                            <input defaultValue={user.displayName} {...register("userName")} placeholder="Your name"  className="p-2 m-2"
                             className="p-2 m-2 w-100" />
-                            <input defaultValue={user.email} {...register("email")} placeholder="Your email"  className="p-2 m-2"
+                            <input defaultValue={user.email} {...register("userEmail")} placeholder="Your email"  className="p-2 m-2"
                             className="p-2 m-2 w-100"/>
                             <input {...register("address")} placeholder="Your address"  className="p-2 m-2"
                             className="p-2 m-2 w-100" />

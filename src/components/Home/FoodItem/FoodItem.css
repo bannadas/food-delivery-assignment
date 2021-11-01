@@ -15,7 +15,23 @@
 }
 .card:hover img{
     overflow: hidden;
-    transform: scale(1.2);
-    transition: transform 1s;
+    /* transform: scale(1.2);
+    transition: transform 1s; */
+}
+.order-btn{
+    background-color: rgb(212, 47, 47);
+    height: 40px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin-left: 110px;
+    color: white; 
+    text-align: center;
+}
+.order-btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(4px);
 }
 

@@ -41,19 +41,19 @@ function App() {
             <Route path="/login">
               <SignIn></SignIn>
             </Route>
-            <Route path="/foodDtl/:_id">
+            <PrivateRoute path="/foodDtl/:_id">
             
               <PlaceOrder></PlaceOrder>
-            </Route>
+            </PrivateRoute>
             <Route path="/myorders" >
            
               <MyOrders></MyOrders>
             </Route>
-            <Route path="/allorders" >
+            <PrivateRoute path="/allorders" >
               <NavigationBar></NavigationBar>
               <AllOrders></AllOrders>
               <Footer></Footer>
-            </Route>
+            </PrivateRoute>
             <Route path='*'>
               <Error></Error>
             </Route>
