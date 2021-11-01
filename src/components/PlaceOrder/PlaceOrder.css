@@ -1,0 +1,10 @@
+.single-Item{
+    border: 1px solid gray;
+    border-radius: 10px;
+ 
+}
+.single-Item img{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+}

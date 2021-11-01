@@ -4,9 +4,11 @@ import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import Footer from '../Footer/Footer';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import './PlaceOrder.css'
 
 const PlaceOrder = () => {
     let { _id } = useParams();
+    const {user} = useAuth();
 
     const [orderItems, setOrderItems] = useState([]);
     const [placeItem, setPlaceItem] = useState([]);
@@ -44,17 +46,24 @@ const PlaceOrder = () => {
         <div>
             <NavigationBar></NavigationBar>
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-6 col-12">
+                <div className="row my-5">
+                    <div className=" single-Item col-lg-6 col-12">
                         <img src={placeItem?.image} alt="" />
-                        <h1>{placeItem?.name}</h1>
+                       <h1>{placeItem?.name}</h1>
+                       <h2> Price:{placeItem?.price}</h2>
                         <p>{placeItem?.description}</p>
                     </div>
                     <div className="col-lg-6 col-12">
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input {...register("address")} placeholder="Your address" />
-                            <input type="number" {...register("number")} placeholder="Your Number" />
-                            <input type="submit" />
+                            <input defaultValue={user.displayName} {...register("name")} placeholder="Your name"  className="p-2 m-2"
+                            className="p-2 m-2 w-100" />
+                            <input defaultValue={user.email} {...register("email")} placeholder="Your email"  className="p-2 m-2"
+                            className="p-2 m-2 w-100"/>
+                            <input {...register("address")} placeholder="Your address"  className="p-2 m-2"
+                            className="p-2 m-2 w-100" />
+                            <input type="number" {...register("number")} placeholder="Your Number"  className="p-2 m-2"
+                            className="p-2 m-2 w-100" />
+                            <button className="submit-btn">Submit</button>
                         </form>
                     </div>
                 </div>

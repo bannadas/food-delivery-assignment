@@ -18,6 +18,8 @@ import Error from './components/Error/Error';
 import Dashboard from './components/Dashboard/Dashboard';
 import MyOrders from './components/MyOrders/MyOrders';
 import AllOrders from './components/AllOrders/AllOrders';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -40,13 +42,17 @@ function App() {
               <SignIn></SignIn>
             </Route>
             <Route path="/foodDtl/:_id">
+            
               <PlaceOrder></PlaceOrder>
             </Route>
             <Route path="/myorders" >
+           
               <MyOrders></MyOrders>
             </Route>
             <Route path="/allorders" >
+              <NavigationBar></NavigationBar>
               <AllOrders></AllOrders>
+              <Footer></Footer>
             </Route>
             <Route path='*'>
               <Error></Error>

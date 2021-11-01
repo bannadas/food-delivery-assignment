@@ -14,6 +14,7 @@ const AllOrder = (props) => {
                     <h1>{singleItem.name}</h1>
                     <p>{address}</p>
                     <p>{user.user.displayName}</p>
+                    <p>{user.user.email}</p>
                 </div>
             </div>
         </div>

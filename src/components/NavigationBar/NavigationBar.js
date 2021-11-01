@@ -26,11 +26,24 @@ const NavigationBar = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home"><span className="text-white">Home</span></Nav.Link>
 
+                    {
+                        user?.displayName?
+                        <Nav.Link as={HashLink} to="/additem"><span className="text-white">Add Item</span></Nav.Link> :
+                        <span style={{display:"none"}}></span>
+                    }
 
+                        
 
-                        <Nav.Link as={HashLink} to="/additem"><span className="text-white">Add Item</span></Nav.Link>
-                        <Nav.Link as={HashLink} to="/myorders"><span className="text-white">My Orders</span></Nav.Link>
-                        <Nav.Link as={HashLink} to="/allorders"><span className="text-white">All Orders</span></Nav.Link>
+                        {user?.displayName ?
+                            <Nav.Link as={HashLink} to="/myorders"><span className="text-white">My Orders</span></Nav.Link> :
+                            <span style={{display:"none"}}></span>
+                        }
+                        {
+                            user?.displayName ?
+                            <Nav.Link as={HashLink} to="/allorders"><span className="text-white">All Orders</span></Nav.Link> :
+                            <span style={{display:"none"}}></span>
+                        }
+                        
 
 
                         {
