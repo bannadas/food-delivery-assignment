@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
- 
+
 } from "react-router-dom";
 
 import './App.css';
@@ -17,39 +17,43 @@ import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Error from './components/Error/Error';
 import Dashboard from './components/Dashboard/Dashboard';
 import MyOrders from './components/MyOrders/MyOrders';
+import AllOrders from './components/AllOrders/AllOrders';
 
 
 
 function App() {
   return (
     <div >
-     <AuthProvider>
-     <Router>
-       <Switch>
-         <Route exact path="/">
-           <Home></Home>
-         </Route>
-         <Route path="/home">
-           <Home></Home>
-         </Route>
-         <PrivateRoute path="/additem">
-           <AddItem></AddItem>
-         </PrivateRoute>
-        <Route path="/login">
-          <SignIn></SignIn>
-        </Route>
-        <Route path="/item/:id">
-          <PlaceOrder></PlaceOrder>
-        </Route>
-        <Route path="/myorders" >
-        <MyOrders></MyOrders>
-        </Route>
-        <Route path='*'>
-        <Error></Error>
-        </Route>
-       </Switch>
-     </Router>
-     </AuthProvider>
+      <AuthProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <PrivateRoute path="/additem">
+              <AddItem></AddItem>
+            </PrivateRoute>
+            <Route path="/login">
+              <SignIn></SignIn>
+            </Route>
+            <Route path="/foodDtl/:_id">
+              <PlaceOrder></PlaceOrder>
+            </Route>
+            <Route path="/myorders" >
+              <MyOrders></MyOrders>
+            </Route>
+            <Route path="/allorders" >
+              <AllOrders></AllOrders>
+            </Route>
+            <Route path='*'>
+              <Error></Error>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
