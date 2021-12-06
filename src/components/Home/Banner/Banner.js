@@ -14,7 +14,7 @@ const Banner = () => {
           
          
             <h1 className="title pt-5">
-             <span className="Aahar">Aahar</span> <br />The Food Delivery
+             <span className="Aahar">Aahar</span> <br />Food Delivery
             </h1>
             <h3 className="text-white text-center mt-3">
             Order food whenever you want!We are always ready to searve you.
